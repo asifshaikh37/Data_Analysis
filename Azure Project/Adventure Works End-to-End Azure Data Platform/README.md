@@ -105,17 +105,9 @@ The pipeline uses three activities chained together:
 - `p_sink_folder` — destination folder name in Bronze
 - `p_sink_file` — destination file name in Bronze
 
-Example:
- {
-        "p_rel_url" : "asifshaikh37/Data_Analysis/refs/heads/main/Azure%20Project/Adventure%20Works%20End-to-End%20Azure%20Data%20Platform/raw_data/AdventureWorks_Product_Categories.csv",
-        "p_sink_folder" : "AdventureWorks_Product_Categories",
-        "p_sink_file" : "AdventureWorks_Product_Categories.csv"
-    },
-    {
-        "p_rel_url" : "asifshaikh37/Data_Analysis/refs/heads/main/Azure%20Project/Adventure%20Works%20End-to-End%20Azure%20Data%20Platform/raw_data/AdventureWorks_Calendar.csv",
-        "p_sink_folder" : "AdventureWorks_Calendar",
-        "p_sink_file" : "AdventureWorks_Calendar.csv"
-    },
+**Parameter File:** [`git.json`](git.json/git.json)
+
+
 
 **Datasets ingested to Bronze:**
 - AdventureWorks_Calendar
