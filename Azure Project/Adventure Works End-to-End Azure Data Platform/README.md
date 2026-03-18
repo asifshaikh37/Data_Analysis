@@ -107,9 +107,14 @@ The pipeline uses three activities chained together:
 
 **Parameter File:** [`git.json`](git.json/git.json)
 
+**Pipeline Output:**
 
+![First Pipeline Output](screenshots/03_pipeline_output_success.png)
 
 **Datasets ingested to Bronze:**
+
+![Data Ingestion - Bronze](screenshots/04_data_ingested_to_bronze.png)
+
 - AdventureWorks_Calendar
 - AdventureWorks_Customers
 - AdventureWorks_Product_Categories
