@@ -1,4 +1,4 @@
-# Azure Data Engineering & Power BI Project — Adventure Works
+# Adventure Works — End-to-End Data Engineering using Azure & Power BI
 
 A complete end-to-end data engineering solution built on Microsoft Azure using the **Medallion Architecture** (Bronze → Silver → Gold), with a Power BI dashboard for business reporting and analytics.
 
