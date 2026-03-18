@@ -84,7 +84,7 @@ GitHub (Raw CSV)
   - Containers: `bronze`, `silver`, `gold`
 - **Azure Data Factory:** `adfadeventureworks`
 
-### Pipeline: `Git to Raw`
+### Pipeline: `Dynamic Git to Raw`
 
 A dynamic, metadata-driven pipeline copies all source datasets from GitHub into the Bronze layer.
 
@@ -95,7 +95,7 @@ A dynamic, metadata-driven pipeline copies all source datasets from GitHub into 
 **Pipeline Design:**
 
 The pipeline uses three activities chained together:
-
+![Dynamic Pipeline](screenshots/02_pipeline_DynamicGitToRaw.png)
 1. **Lookup Activity** — reads a JSON parameter file stored in ADLS containing `relative_url`, `sink_folder`, and `sink_file` values for each dataset
 2. **ForEach Activity** — iterates over all rows returned by the Lookup
 3. **Copy Activity (dynamic)** — inside the ForEach loop, copies each file from GitHub to the corresponding Bronze folder using dynamic parameters
