@@ -111,6 +111,7 @@ The pipeline uses three activities chained together:
 
 ![First Pipeline Output](screenshots/03_pipeline_output_success.png)
 
+
 **Datasets ingested to Bronze:**
 
 ![Data Ingestion - Bronze](screenshots/04_data_ingested_to_bronze.png)
