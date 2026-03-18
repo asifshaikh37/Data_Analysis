@@ -76,7 +76,7 @@ GitHub (Raw CSV)
 ## Data Ingestion — Bronze Layer
 
 ### Azure Resources Created
-
+![Resource Group](screenshots/01_resource_group.png)
 - **Resource Group:** `AzureProject`
 - **Storage Account (Data Lake):** `adventureworksdatalakest`
   - Hierarchical Namespace enabled (ADLS Gen2)
