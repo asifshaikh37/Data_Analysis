@@ -10,8 +10,7 @@ An interactive, multi-page Power BI dashboard analysing Airbnb's global performa
 - [Key Features](#key-features)
 - [Dashboard Pages](#dashboard-pages)
   - [Page 1 — New Listings & Growth Lifecycle](#page-1--new-listings--growth-lifecycle)
-  - [Page 2 — Market Share by City (Overall Rating)](#page-2--market-share-by-city-overall-rating)
-  - [Page 3 — Market Share by City (Detailed Rating)](#page-3--market-share-by-city-detailed-rating)
+  - [Page 2 — Market Share by City](#page-2--market-share-by-city)
 - [Key Business Insights](#key-business-insights)
 - [Tools & Technologies](#tools--technologies)
 - [Data Model](#data-model)
@@ -44,7 +43,7 @@ The dashboard is designed to help business stakeholders, analysts, and investors
 - **Business lifecycle analysis** — tracks Airbnb's growth from 2008 to 2021 across 6 distinct phases
 - **Multi-city comparison** — side-by-side performance analysis across 10 global cities
 - **Superhost vs Non-Superhost breakdown** — listing distribution and market share by host quality
-- **Dynamic rating toggle** — switch between Overall Rating and Detailed Rating views interactively
+- **Bookmark-driven interactive navigation** — toggle between Overall Rating and Detailed Rating views using icon buttons, built with Power BI Bookmarks and Button Actions
 - **Pricing analysis by property type** — average price comparison across Hotel Room, Entire Place, Shared Room, and Private Room
 - **Cumulative market share tracking** — Pareto-style analysis showing which cities dominate the platform
 - **Detailed rating matrix** — city-level scores across Accuracy, Cleanliness, Communication, Location, and Value
@@ -58,11 +57,14 @@ The dashboard is designed to help business stakeholders, analysts, and investors
 This page tracks the evolution of Airbnb's new listings from 2008 to 2021, segmented by property type and annotated with key business lifecycle phases.
 
 **KPIs displayed:**
-- Total Listings: 2,79,712
-- Cities: 10
-- Hosts: 1,82,024
-- Property Types: 144
-- Reviews: 5,373K
+
+| KPI | Value |
+|---|---|
+| Total Listings | 2,79,712 |
+| Cities | 10 |
+| Hosts | 1,82,024 |
+| Property Types | 144 |
+| Reviews | 5,373K |
 
 **Lifecycle Phases annotated on the trend chart:**
 
@@ -83,28 +85,83 @@ This page tracks the evolution of Airbnb's new listings from 2008 to 2021, segme
 
 ### Page 2 — Market Share by City
 
-This page provides city-level market share analysis combining listing 
-volume, Superhost distribution, pricing, and customer ratings.
+This page provides a city-level market share analysis combining listing volume, Superhost distribution, pricing, and customer ratings.
 
 The page is divided into two sections:
 
-**Top Section — Market Share & Pricing (Static)**
-- Pareto chart showing listings and Superhost % by city
-- Average pricing breakdown by property type
+#### Top Section — Market Share & Pricing (Static)
 
-**Bottom Section — Ratings (Interactive via Bookmarks)**
+**Market Share Visual (Pareto Chart):**
+- Paris, New York, and Sydney collectively account for nearly **half of total listings** and **59% of total reviews**
+- Paris leads with the highest listing volume
+- Hong Kong has the lowest total listings but maintains strong rating scores
 
-Two views are available, toggled using icon buttons:
+**Superhost Distribution by City:**
 
-| Button | Icon | View |
+| City | Superhost % |
+|---|---|
+| Paris | 23.1% |
+| New York | 36.4% |
+| Sydney | 48.4% |
+| Rome | 58.3% |
+| Rio de Janeiro | 67.8% |
+| Istanbul | 76.5% |
+| Mexico City | 83.7% |
+| Bangkok | 90.6% |
+| Cape Town | 97.5% |
+| Hong Kong | 100.0% |
+
+**Average Pricing by Property Type:**
+
+| Property Type | Avg Price |
+|---|---|
+| Hotel Room | $800 |
+| Entire Place | $673 |
+| Shared Room | $580 |
+| Private Room | $462 |
+
+---
+
+#### Bottom Section — Ratings (Interactive via Bookmarks)
+
+Two rating views are available on the same page, toggled using icon buttons built with **Power BI Bookmarks and Button Actions**:
+
+| Button | Icon | View Displayed |
 |---|---|---|
-| Overall Rating | ⭐ Star | Bar chart showing avg rating per city |
-| Detailed Rating | 🔍 Search | Matrix table with scores across Accuracy, Cleanliness, Communication, Location, Value |
+| Overall Rating | ⭐ Star icon | Bar chart showing average overall rating per city |
+| Detailed Rating | 🔍 Search icon | Matrix table with scores across 5 dimensions |
 
-> **Bookmark Navigation:** Built using Power BI Bookmarks and Button 
-> Actions — clicking each icon hides one visual and reveals the other, 
-> creating a seamless toggle experience without changing pages.
+> **How it works:** Clicking the Star icon triggers a bookmark that hides the Detailed Rating matrix and reveals the Overall Rating bar chart. Clicking the Search icon does the reverse — hiding the bar chart and showing the detailed matrix. This creates a seamless toggle experience without navigating to a new page.
 
+**Overall Ratings by City (out of 100):**
+
+| City | Overall Rating |
+|---|---|
+| Hong Kong | 89.7 |
+| Istanbul | 91.1 |
+| Bangkok | 93.0 |
+| Paris | 93.1 |
+| Sydney | 93.2 |
+| Rome | 93.5 |
+| New York | 93.8 |
+| Cape Town | 94.4 |
+| Rio de Janeiro | 94.6 |
+| Mexico City | 94.8 |
+
+**Detailed Ratings by City (out of 10):**
+
+| City | Accuracy | Cleanliness | Communication | Location | Value |
+|---|---|---|---|---|---|
+| Bangkok | 9.5 | 9.4 | 9.6 | 9.2 | 9.3 |
+| Cape Town | 9.6 | 9.5 | 9.7 | 9.7 | 9.5 |
+| Hong Kong | 9.2 | 9.0 | 9.4 | 9.6 | 9.0 |
+| Istanbul | 9.3 | 9.1 | 9.5 | 9.4 | 9.2 |
+| Mexico City | 9.7 | 9.6 | 9.8 | 9.8 | 9.6 |
+| New York | 9.6 | 9.3 | 9.7 | 9.6 | 9.4 |
+| Paris | 9.6 | 9.2 | 9.7 | 9.7 | 9.3 |
+| Rio de Janeiro | 9.6 | 9.4 | 9.8 | 9.8 | 9.3 |
+| Rome | 9.6 | 9.5 | 9.7 | 9.6 | 9.4 |
+| Sydney | 9.5 | 9.2 | 9.7 | 9.7 | 9.3 |
 
 ---
 
@@ -115,22 +172,23 @@ Two views are available, toggled using icon buttons:
 - **Airbnb turned profitable in 2016** despite a slowdown in new listings, demonstrating improved monetisation efficiency
 - **Hotel Room listings grew during 2018–2019** reflecting Airbnb's strategic pivot to compete directly with traditional hospitality
 - **Mexico City and Rio de Janeiro are the highest-rated cities** across all satisfaction dimensions — driven by strong communication, location scores, and value for money
-- **Hong Kong and Istanbul consistently score lowest** — Cleanliness and Value for Money are the two weakest dimensions globally, representing the largest opportunity for platform improvement
-- **Cleanliness and Value are the lowest-scoring dimensions globally** across nearly all cities — indicating a systemic gap that Airbnb could address through host quality programmes
-- **Cape Town and Bangkok have the highest Superhost ratios** (97.5% and 90.6%) — suggesting highly engaged, quality-conscious host communities in these markets despite lower listing volumes
+- **Hong Kong and Istanbul consistently score lowest** — Cleanliness and Value for Money are the two weakest dimensions, representing the largest opportunity for platform-level quality improvement
+- **Cleanliness and Value are the lowest-scoring dimensions globally** across nearly all cities — indicating a systemic gap that Airbnb could address through host quality and pricing transparency programmes
+- **Cape Town and Bangkok have the highest Superhost ratios** (97.5% and 90.6%) — suggesting highly engaged, quality-conscious host communities in these markets despite lower overall listing volumes
 
 ---
 
 ## Tools & Technologies
 
-| Tool | Usage |
+| Tool / Skill | Usage |
 |---|---|
 | Power BI Desktop | Dashboard development and visualisation |
 | DAX (Data Analysis Expressions) | KPI measures, calculated columns, dynamic ratings |
 | Power Query (M Language) | Data cleaning and transformation |
-| Data Modelling | Relationships between listing, host, city, and review tables |
-| Pareto / Cumulative Analysis | Market share visualisation |
-| Interactive Bookmarks | Toggle between Overall and Detailed Rating views |
+| Data Modelling | Star schema relationships between listing, host, city, and review tables |
+| Bookmarks & Button Actions | Interactive toggle between Overall and Detailed Rating views |
+| Pareto / Cumulative Analysis | City-level market share visualisation |
+| Conditional Formatting | Highlight top and bottom performing cities in rating matrix |
 
 ---
 
@@ -140,7 +198,7 @@ The data model follows a **Star Schema** design:
 
 - **Fact Table** — Listings (core transactional data: price, reviews, availability)
 - **Dimension Tables** — City, Host, Property Type, Date
-- Relationships designed for optimised DAX calculations and cross-filtering across all visuals
+- Relationships optimised for DAX calculations and cross-filtering across all visuals
 
 ---
 
@@ -148,9 +206,8 @@ The data model follows a **Star Schema** design:
 
 This dashboard demonstrates how data analytics can uncover meaningful business patterns in a global marketplace. Key takeaways from the analysis include the critical role of regulatory environments in shaping platform growth, the opportunity to improve cleanliness and value perception across all markets, and the strategic importance of Superhost quality programmes in driving customer satisfaction.
 
-The interactive design allows both executive-level overview and granular city-level analysis within a single report — making it suitable for strategic planning, market entry decisions, and host quality management.
+The interactive bookmark-driven design allows both executive-level overview and granular city-level analysis within the same report — making it suitable for strategic planning, market entry decisions, and host quality management.
 
 ---
 
-*Built with Power BI Desktop · DAX · Power Query · Data Modelling*
-
+*Built with Power BI Desktop · DAX · Power Query · Data Modelling · Bookmarks & Button Actions*
