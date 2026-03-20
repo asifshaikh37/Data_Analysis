@@ -271,6 +271,8 @@ The Gold layer is implemented in **Azure Synapse Analytics** using the Serverles
 
 ### Synapse Workspace Setup
 
+![synapse_workspace](screenshots/24_synapse_workspace.png)
+
 - **Workspace:** `advproject-synapse`
 - **Default Storage:** `advworksdefaultstorage`
 - **Database:** `advdatabase` (Serverless SQL Pool)
