@@ -390,7 +390,14 @@ CETAS is executed for all datasets, resulting in physical Parquet files in the G
 
 Power BI is connected to Synapse Serverless SQL using the SQL Serverless Endpoint.
 
+![powerbi_azure_synapse_source](screenshots/28_powerbi_source_azure_synapse_sql.png)
+
+![powerbi_sql_cred](screenshots/29_powerbi_sql_cred.png)
+
 The data model follows a **Star Schema** design for optimized query performance and scalability.
+
+![powerbi_data_model](screenshots/30_powerbi_data_model.png)
+
 
 ### Schema Design
 
