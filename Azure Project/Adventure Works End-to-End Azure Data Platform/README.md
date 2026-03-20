@@ -137,12 +137,20 @@ Transformations are implemented using **ADF Mapping Data Flows**, which run on A
 
 **Data Flow:** `df_silver_calendar` | **Pipeline:** `pl_silver_calendar`
 
+![data_flow_silver_calendar](screenshots/05_df_silver_calendar.png)
+
 - Source: Bronze CSV
 - Projection set to `string` to prevent date parsing failures (Spark default expects `yyyy-MM-dd`)
 - **Derived Columns added:**
   - `Month`: `month(toDate(Date, 'M/d/yyyy'))`
   - `Year`: `year(toDate(Date, 'M/d/yyyy'))`
+
+ ![pipeline_silver_calendar](screenshots/06_pl_silver_calendar.png)
+    
 - Sink: Silver layer, Parquet format
+
+ ![sink_silver_calendar](screenshots/07_calendar_silver_sink.png)
+ 
 
 ### Transformation 2 — Customers
 
