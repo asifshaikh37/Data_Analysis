@@ -444,6 +444,7 @@ Provides a high-level summary of overall business performance.
 
 **Use case:** Quick snapshot for executive decision-making, monitoring profitability and growth trends.
 
+
 ### Page 2 — Product & Returns Analysis
 
 Focuses on product-level performance and return behaviour.
@@ -457,6 +458,7 @@ Focuses on product-level performance and return behaviour.
 - Worst Performing Products — products with high return rates indicating quality issues
 
 **Use case:** Identifying revenue-driving and high-risk products to support inventory and quality decisions.
+
 
 ### Page 3 — Customer Insights
 
