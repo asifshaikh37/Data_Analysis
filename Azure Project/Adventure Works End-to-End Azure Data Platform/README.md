@@ -161,7 +161,12 @@ Transformations are implemented using **ADF Mapping Data Flows**, which run on A
 - **Derived Column added:**
   - `FullName`: `trim(concat(Prefix, ' ', FirstName, ' ', LastName))` using `coalesce()` for null safety
 - **Select transformation** applied to rename columns to camelCase (Parquet does not allow spaces or special characters in column names)
+
+![pipeline_silver_customer](screenshots/08_pl_silver_customers.png)
+  
 - Sink: Silver layer, Parquet format
+
+![sink_silver_customer](screenshots/09_customers_sink_silver.png)
 
 ### Transformation 3 — Product Categories
 
