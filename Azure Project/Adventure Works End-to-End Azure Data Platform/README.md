@@ -287,6 +287,8 @@ The Gold layer is implemented in **Azure Synapse Analytics** using the Serverles
 CREATE SCHEMA gold;
 ```
 
+![view_gold](screenshots/25_create_views_gold.png)
+
 A dedicated schema provides logical separation between layers, improves governance, enables schema-level access control, and enforces clear architectural boundaries within the database.
 
 ### Step 2 — Create Views over Silver Layer
@@ -361,11 +363,17 @@ WITH (
 )
 AS
 SELECT * FROM gold.sales;
+
+![external_table_gold](screenshots/26_create_external_table_gold.png)
+
 ```
 
 CETAS is executed for all datasets, resulting in physical Parquet files in the Gold container and registered external tables accessible via Synapse Serverless SQL.
 
 **External tables created in Gold:**
+
+![external_tables_gold](screenshots/27_external_tables_gold.png)
+
 - `gold.extsales`
 - `gold.extcustomers`
 - `gold.extproducts`
