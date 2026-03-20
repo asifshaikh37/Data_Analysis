@@ -184,6 +184,8 @@ Transformations are implemented using **ADF Mapping Data Flows**, which run on A
 
 **Derived Column transformations (in-place overwrites):**
 
+![dataflow_silver_products](screenshots/12_df_silver_products.png)
+
 - **ProductSKU** — extract prefix before first hyphen:
   ```
   iif(locate('-', ProductSKU) > 0, substring(ProductSKU, 1, locate('-', ProductSKU) - 1), ProductSKU)
@@ -192,7 +194,12 @@ Transformations are implemented using **ADF Mapping Data Flows**, which run on A
   ```
   iif(locate(' ', ProductName) > 0, substring(ProductName, 1, locate(' ', ProductName) - 1), ProductName)
   ```
+
+  ![pipeline_silver_products](screenshots/13_pl_silver_products.png)
+
 - Sink: Silver layer, Parquet format
+  ![sink_silver_product](screenshots/14_product_sink_silver.png)
+
 
 ### Transformation 5 — Returns
 
