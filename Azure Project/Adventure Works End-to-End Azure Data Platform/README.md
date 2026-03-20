@@ -168,10 +168,17 @@ Transformations are implemented using **ADF Mapping Data Flows**, which run on A
 
 ![sink_silver_customer](screenshots/09_customers_sink_silver.png)
 
+
 ### Transformation 3 — Product Categories
 
 - Pass-through transformation: format conversion from CSV to Parquet
+
+![pipeline_silver_product_categories](screenshots/10_pl_silver_product_categories.png)
+  
 - No business transformations required
+
+![sink_silver_product_categories](screenshots/11_product_categories_sink_silver.png)
+
 
 ### Transformation 4 — Products
 
