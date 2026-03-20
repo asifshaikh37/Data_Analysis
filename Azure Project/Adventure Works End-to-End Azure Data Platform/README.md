@@ -149,7 +149,7 @@ Transformations are implemented using **ADF Mapping Data Flows**, which run on A
     
 - Sink: Silver layer, Parquet format
 
- ![sink_silver_calendar](screenshots/07_calendar_silver_sink.png)
+ ![sink_silver_calendar](screenshots/07_calendar_sink_silver.png)
  
 
 ### Transformation 2 — Customers
