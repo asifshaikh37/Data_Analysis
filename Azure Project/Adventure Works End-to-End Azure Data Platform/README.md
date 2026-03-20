@@ -232,6 +232,8 @@ Transformations are implemented using **ADF Mapping Data Flows**, which run on A
 
 All three yearly sales files are ingested in a single Data Flow using a **wildcard path** in Source Options:
 
+![dataflow_silver_sales](screenshots/21_df_silver_sales.png)
+
 ```
 AdventureWorks_Sales_*/**/*.csv
 ```
@@ -246,7 +248,13 @@ This instructs ADF to recursively read all CSV files across matching folders, co
 | OrderNumber prefix S → T | `concat('T', substring(OrderNumber, 2))` |
 | LineAmount (new column) | `OrderLineItem * OrderQuantity` |
 
+
+![pipeline_silver_sales](screenshots/22_pl_silver_sales.png)
+
+
 **Sink configuration:** Single Partition selected in Optimize tab to produce one consolidated Parquet file combining all three years.
+
+![sink_silver_sales](screenshots/23_sales_sink_silver.png)
 
 ---
 
