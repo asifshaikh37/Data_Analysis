@@ -434,6 +434,8 @@ The dashboard consists of three report pages, each targeting a specific analytic
 
 Provides a high-level summary of overall business performance.
 
+![powerbi_executive_overview_page1](screenshots/31_powerbi_executive_overview_page1.png)
+
 **Visuals included:**
 - KPI cards: Total Sales, Profit, Profit Margin %, Total Orders, Return Rate %, Sales MoM %
 - Sales Trend Line Chart — tracks performance over time and identifies growth patterns
@@ -446,6 +448,8 @@ Provides a high-level summary of overall business performance.
 
 Focuses on product-level performance and return behaviour.
 
+![powerbi_product&return_analytics_page2](screenshots/32_powerbi_product&return_analytics_page2.png)
+
 **Visuals included:**
 - Top 10 Products by Revenue — best-selling products
 - Top 5 Product Subcategories — highest revenue-contributing subcategories
@@ -457,6 +461,8 @@ Focuses on product-level performance and return behaviour.
 ### Page 3 — Customer Insights
 
 Focuses on customer segmentation and revenue contribution.
+
+![powerbi_customer_insights_page3](screenshots/33_powerbi_customer_insights_page3.png)
 
 **Visuals included:**
 - KPI cards: Total Unique Customers, Average Order Value, Revenue per Customer
