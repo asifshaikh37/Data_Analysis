@@ -48,8 +48,8 @@ Data cleaning and exploration projects using Microsoft SQL Server.
 
 | Project | Description |
 |---|---|
-| [Nashville Housing Data Cleaning](./SQL/Nashville%20Housing/) | Cleaned and transformed raw housing data using T-SQL |
-| [Covid-19 Data Exploration](./SQL/Covid%20Data%20Exploration/) | Explored global Covid death and vaccination data using advanced SQL |
+| [Nashville Housing Data Cleaning](./SQL/nashville-housing-sql-data-cleaning/) | Cleaned and transformed raw housing data using T-SQL |
+| [Covid-19 Data Exploration](./SQL/covid-19-sql-data-exploration/) | Explored global Covid death and vaccination data using advanced SQL |
 
 ---
 
