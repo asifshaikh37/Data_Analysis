@@ -58,7 +58,10 @@ Interactive dashboards and reports built in Power BI.
 
 | Project | Description |
 |---|---|
-| [Power BI Projects](./Power_BI/) | Dashboards covering various business and analytical use cases |
+| [Airbnb Global Performance Dashboard](./Power_BI/AirBnb_Global_Performance_Dashboard/) | Multi-page dashboard analysing Airbnb's performance across 10 major cities — listings, pricing, ratings & market share |
+| [Adventure Works — Executive Sales Dashboard](./Power_BI/Executive%20Sales%20Dashboard-%20Power%20BI/) | Executive-level sales dashboard covering revenue trends, product profitability, geography & customer behaviour |
+| [IT Support Analytics](./Power_BI/IT%20Support%20Analytics/) | Analyses IT support ticket trends, recurring issues & year-on-year patterns across a fleet of 26 vessels for a Singapore maritime client |
+| [Support Ticket Dashboard](./Power_BI/Support%20Ticket%20Dashboard/) | Tracks live ticket statuses, backlogs & resolution progress across 26 vessels — helping the IT team prioritise and clear workloads efficiently |
 
 ---
 
@@ -67,7 +70,7 @@ End-to-end data pipeline and analytics projects on Microsoft Azure.
 
 | Project | Description |
 |---|---|
-| [Adventure Works — Azure End-to-End](./Azure%20Project/) | Full data pipeline using Azure Data Factory, Databricks, and Synapse Analytics |
+| [Adventure Works — Azure End-to-End](./Azure%20Project/Adventure%20Works%20End-to-End%20Azure%20Data%20Platform/) | End-to-end data pipeline using Medallion Architecture (Bronze → Silver → Gold) with Azure Data Factory, ADLS Gen2, Synapse Analytics & Power BI |
 
 ---
 
