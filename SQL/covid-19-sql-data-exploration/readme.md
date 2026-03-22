@@ -33,28 +33,4 @@ The analysis uses two core tables — `CovidDeaths` and `CovidVaccinations` — 
 - 💉 **Population vs Vaccinations** — Tracked rolling vaccination counts per country using `PARTITION BY` window functions
 - 📊 **CTE & Temp Table** — Used a CTE and a Temp Table (`#PercentPopulationVaccinated`) to calculate the percentage of population vaccinated over time
 
----
-
-## 📁 Dataset
-
-- **Tables:** `CovidDeaths`, `CovidVaccinations`
-- **Key Columns:** `Location`, `Continent`, `Date`, `Population`, `Total_Cases`, `New_Cases`, `Total_Deaths`, `New_Deaths`, `New_Vaccinations`
-
----
-
-## 🔗 Repository Structure
-
-```
-Covid Data Exploration/
-│
-├── Covid Data Exploration.sql   # Full SQL exploration script
-└── README.md                    # Project documentation
-```
-
----
-
-## 👤 Author
-
-**asifshaikh37**  
-Data Analysis · SQL · Data Exploration
 
