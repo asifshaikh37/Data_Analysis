@@ -1,5 +1,10 @@
 # IT Support Ticket Reports — Power BI Dashboard
 
+> **Note:** The data presented in this dashboard has been anonymised
+> and is shared with client approval for portfolio purposes only.
+> Vessel names and ticket volumes are representative of real operations
+> but do not disclose any confidential client information.
+
 An interactive Power BI dashboard developed for a **Singapore-based maritime client** to monitor, analyse, and optimise IT support ticket management across a fleet of 26 vessels operating globally.
 
 ---
