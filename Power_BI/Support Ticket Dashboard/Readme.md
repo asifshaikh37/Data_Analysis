@@ -1,4 +1,4 @@
-# Support Ticket Dashboard — Power BI
+# Support Ticket Dashboard — Power BI Dashboard 
 
 > **Note:** The data presented in this dashboard has been anonymised
 > and is shared with client approval for portfolio purposes only.
