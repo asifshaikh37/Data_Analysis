@@ -9,7 +9,7 @@
 
 ## 👤 About Me
 
-I'm a Data Analyst with 2+ years of experience turning raw data into meaningful, actionable insights. I started my career at **eDOT Solutions** (Oct 2022) where I built Power BI dashboards for cybersecurity and vessel monitoring, and I currently work as an **Advance Reporting Analyst at Deloitte** (Dec 2024–Present), focused on workforce analytics and reporting automation.
+I'm a Data Analyst with 3+ years of experience turning raw data into meaningful, actionable insights. I started my career at **eDOT Solutions** (Oct 2022) where I built Power BI dashboards for cybersecurity and vessel monitoring, and I currently work as an **Advance Reporting Analyst at Deloitte** (Dec 2024–Present), focused on workforce analytics and reporting automation.
 
 My expertise spans SQL, Power BI, Python, R, Tableau, and Advanced Excel — from data cleaning and exploration to interactive dashboards and data modeling.
 
