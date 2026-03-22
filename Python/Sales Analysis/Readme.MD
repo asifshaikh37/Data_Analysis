@@ -51,5 +51,3 @@ Key objectives of this analysis include:
 ### 🛍️ Product Category
 - **Clothing & Apparel** (2,655) and **Food** (2,490) are the top-selling categories by order count, followed by **Electronics & Gadgets** (2,087) and **Footwear & Shoes** (1,059). This suggests that festive gifting and personal consumption drive the most sales during Diwali.
 
-
-```
