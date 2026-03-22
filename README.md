@@ -70,7 +70,7 @@ End-to-end data pipeline and analytics projects on Microsoft Azure.
 
 | Project | Description |
 |---|---|
-| [Adventure Works — Azure End-to-End](./Azure%20Project/Adventure%20Works%20End-to-End%20Azure%20Data%20Platform/) | End-to-end data pipeline using Medallion Architecture (Bronze → Silver → Gold) with Azure Data Factory, ADLS Gen2, Synapse Analytics & Power BI |
+| [Adventure Works — Azure End-to-End](./Azure%20Project/Adventure%20Works%20End-to-End%20Azure%20Data%20Platform/) | End-to-end data pipeline using Medallion Architecture (Bronze → Silver → Gold) with Azure Data Factory, Azure SQL, ADLS Gen2, Synapse Analytics & Power BI |
 
 ---
 
